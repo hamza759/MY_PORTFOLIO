@@ -60,38 +60,38 @@ navanimation()
 
 function navscroll() {
   window.addEventListener('scroll', (event) => {
-    // let sel = document.querySelector("nav .img2")
-    // const linksList = document.querySelector(".links ul ");
-    // const scrollThreshold = 100;  // Adjust as needed
-    //  linksList.style.transition = "transform 1.5s ease-in-out, opacity 1.5s ease-in-out";
+    let sel = document.querySelector("nav .img2")
+    const linksList = document.querySelector(".links ul ");
+    const scrollThreshold = 100;  // Adjust as needed
+     linksList.style.transition = "transform 1.5s ease-in-out, opacity 1.5s ease-in-out";
 
-    // if (window.scrollY > scrollThreshold) {
-    //   linksList.style.opacity = 0;
-    //   linksList.style.transition = "opacity 1.5s ease-in-out";
-    //   linksList.style.transition = "all 2s";
-    //   linksList.style.transitionDuration = "1s";
-    //   linksList.style.transitionTimingFunction = "linear";
-    //   linksList.style.transform = "translateX(40px)"
-    //   sel.style.transform = "rotate(90deg)";
-    //   sel.style.transition = "1.5s ease-in-out";
-    // } 
-    // else {
-    //   linksList.style.opacity = 1;
-    //   linksList.style.transition = "opacity 1.5s ease-in-out";
-    //   linksList.style.transition = "all 2s";
-    //   linksList.style.transitionDuration = "1s";
-    //   linksList.style.transitionTimingFunction = "linear";
-    //   linksList.style.transform = "translateX(-10px)"
-    //   sel.style.transform = "rotate(0deg)";
-    //   sel.style.transition = "1.5s ease-in-out";
-    // }
+    if (window.scrollY > scrollThreshold) {
+      linksList.style.opacity = 0;
+      linksList.style.transition = "opacity 1.5s ease-in-out";
+      linksList.style.transition = "all 2s";
+      linksList.style.transitionDuration = "1s";
+      linksList.style.transitionTimingFunction = "linear";
+      linksList.style.transform = "translateX(40px)"
+      sel.style.transform = "rotate(90deg)";
+      sel.style.transition = "1.5s ease-in-out";
+    } 
+    else {
+      linksList.style.opacity = 1;
+      linksList.style.transition = "opacity 1.5s ease-in-out";
+      linksList.style.transition = "all 2s";
+      linksList.style.transitionDuration = "1s";
+      linksList.style.transitionTimingFunction = "linear";
+      linksList.style.transform = "translateX(-10px)"
+      sel.style.transform = "rotate(0deg)";
+      sel.style.transition = "1.5s ease-in-out";
+    }
 
   });
 
   // here i will create function on logo design
   window.addEventListener('scroll', (event) => {
     let imglogo = document.querySelector("nav .img")
-    const logoheading = document.querySelector("nav .img ");
+    const logoheading = document.querySelector("nav .img h4");
     const scrollThreshold = 200;
     if (window.scrollY > scrollThreshold) {
       logoheading.style.opacity = 0;
@@ -116,55 +116,42 @@ function navscroll() {
     }
   });
 
-   
-  //  const linksList = document.querySelector(".links ul ");
-  //  let sel = document.querySelector("nav .img2")
-  //  sel.addEventListener('click', function () {
-  //    sel.style.transform = "rotate(0deg)";
-  //    sel.style.transition = "1.5s ease-in-out";
-  //    linksList.style.opacity = 1;
-  //    linksList.style.transform = "translateX(-10px)"
-  //    linksList.style.transition = "opacity 0.5s ease-in-out";  // Add transitio
-  //    linksList.style.transition = "all 2s";
-  //    linksList.style.transitionDuration = "1s";
-  //    linksList.style.transitionTimingFunction = "linear";
-  //  });
 }
 navscroll()
 
 
-function btncliked() {
-  let sel = document.querySelector("nav .img2")
-const linksList = document.querySelector(".links ul ");
-let isClcked = false
-sel.addEventListener('click', function () {
-  if (!isClcked) {
+// function btncliked() {
+//   let sel = document.querySelector("nav .img2")
+// const linksList = document.querySelector(".links ul ");
+// let isClcked = false
+// sel.addEventListener('click', function () {
+//   if (!isClcked) {
 
-    sel.style.transform = "rotate(90deg)";
-    sel.style.transition = "1.5s ease-in-out";
-    linksList.style.opacity = 0;
-    linksList.style.transform = "translateX(40px)"
-    linksList.style.transition = "opacity 0.5s ease-in-out";  // Add transitio
-    linksList.style.transition = "all 2s";
-    linksList.style.transitionDuration = "1s";
-    linksList.style.transitionTimingFunction = "linear";
+//     sel.style.transform = "rotate(90deg)";
+//     sel.style.transition = "1.5s ease-in-out";
+//     linksList.style.opacity = 0;
+//     linksList.style.transform = "translateX(40px)"
+//     linksList.style.transition = "opacity 0.5s ease-in-out";  // Add transitio
+//     linksList.style.transition = "all 2s";
+//     linksList.style.transitionDuration = "1s";
+//     linksList.style.transitionTimingFunction = "linear";
 
-    isClcked = true
-  } else {
-    sel.style.transform = "rotate(0deg)";
-    sel.style.transition = "1.5s ease-in-out";
-    linksList.style.opacity = 1;
-    linksList.style.transform = "translateX(-20px)"
-    linksList.style.transition = "opacity 0.5s ease-in-out";  // Add transitio
-    linksList.style.transition = "all 2s";
-    linksList.style.transitionDuration = "1s";
-    linksList.style.transitionTimingFunction = "linear";
-    isClcked = false
-  }
-});
+//     isClcked = true
+//   } else {
+//     sel.style.transform = "rotate(0deg)";
+//     sel.style.transition = "1.5s ease-in-out";
+//     linksList.style.opacity = 1;
+//     linksList.style.transform = "translateX(-20px)"
+//     linksList.style.transition = "opacity 0.5s ease-in-out";  // Add transitio
+//     linksList.style.transition = "all 2s";
+//     linksList.style.transitionDuration = "1s";
+//     linksList.style.transitionTimingFunction = "linear";
+//     isClcked = false
+//   }
+// });
 
-}
-btncliked()
+// }
+// btncliked()
 
 
 
