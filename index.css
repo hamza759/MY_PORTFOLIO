@@ -526,6 +526,11 @@ nav ul a:hover::after {
     border-radius: 5px;
     border: 1px solid #274E41;
 }
+.firstc button:hover{
+    color:#274E41 ;
+    transition: 1s;
+    transform: translateY(2px)
+}
 
 /* main4444444444444444444444444444444444444444444444444444444444444 */
 
